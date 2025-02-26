@@ -80,7 +80,9 @@ async def view_cart(message: Message):
 
     keyboard = InlineKeyboardMarkup(
         inline_keyboard = [
-            [InlineKeyboardButton(text = "✅ Оформити замовлення" , callback_data = "checkout")]
+            [InlineKeyboardButton(text = "✅ Оформити замовлення" ,
+                                  web_app=WebAppInfo(url="https://sockswebapp.onrender.com/"))
+             ]
         ]
     )
 
